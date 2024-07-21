@@ -1,0 +1,214 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    /* background-color: rgb(0, 14, 103); */
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.form-section{
+    width: 50%;
+    background-color: rgb(0,14,120);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.form-section input,textarea{
+    width: 400px;
+    font-size: 20px;
+    margin: 10px;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border:2px solid maroon;
+    outline: none;
+}
+.submit-btn{
+    background-color: rgb(8, 60, 81);
+    border: 2px solid rgb(159, 149, 242);
+    color: rgb(230, 152, 152);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.add-candidate{
+    display: flex;
+    flex-direction: column;
+}
+.candidate-list{
+    width: 90vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items:start;
+    column-gap: 30px;
+    padding-top: 70px;
+    /* padding: 20px; */
+    margin: 0 auto;
+    background-color: green;
+    overflow-x:hidden;
+}
+.butt{
+    background-color: rgb(138, 243, 243);
+    color: rgb(19, 23, 25);
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+.candidate-list .post-heading{
+    font-size: 26px;
+    color: aliceblue;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(0, 14, 120);
+    padding: 15px;
+}
+.candidate{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: rgb(38, 76, 108);
+    color: 20px;
+    font-weight: 500;
+    padding: 8px;
+    position: relative;
+}
+.candidate img{
+    width: 10%;
+    position: absolute;
+}
+.modify{
+    top: 2px;
+    right: 31px;
+    width: fit-content;
+    position: absolute;
+}
+.candidate .edit{
+    color:green ;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+}
+.candidate .delete{
+    color: red;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(96, 140, 179);
+    height: 100px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-size: 30px;
+}
+.navbar .logout img{
+    height: 55px;
+    border: 1px solid black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.start-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.start-voting{
+    padding: 12px 22px;
+    background-color: rgb(11, 189, 238);
+    border: 1px solid grey;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+.child-btn{
+    /* height: 10%; */
+    position: absolute;
+    background-color: rgb(182, 182, 182);
+    border: 1px solid rgb(117, 117, 117);
+    padding:2%;
+}
+.candidate-post{
+    width: inherit;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 200px;
+    padding: 0 60px 3px 0px;
+    margin: 0 5px 0 5px;
+    overflow: scroll;
+}
+
+.candinate-name{
+    /* border: 1px solid blue; */
+    /* background-color: rgb(0, 60, 110); */
+    background: none;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    font-weight: 500;
+    /* padding: 10px; */
+    cursor: pointer;
+}
+.manage{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.addCandidate,.manageCandidate{
+    width:200px;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(0, 12, 79);
+    cursor: pointer;
+    border: 1px solid blue;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+}
+.addCandidate:hover,.manageCandidate:hover{
+    color: chartreuse;
+    font-weight: 700;
+    font-size: 1.35rem;
+}
